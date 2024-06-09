@@ -1,0 +1,15 @@
+﻿@model Gallery.Models.Album
+
+<h2>Album Details</h2>
+
+<div>
+    <h4>Title: @Model.Title</h4>
+    <p>Description: @Model.Description</p>
+    <p>Photos:</p>
+    <ul>
+        @foreach (var photo in Model.Photos)
+        {
+            <li>@photo.Url</li>
+        }
+    </ul>
+</div>
